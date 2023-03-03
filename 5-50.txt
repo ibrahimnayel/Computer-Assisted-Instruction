@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main ()
+{
+    srand(time(0));
+    int no1 = rand()%11;
+    int no2 = rand()%11;
+    int ans,stans;
+do
+ {
+      printf(" multiplication school\n");
+printf("How much is %d times %d ?",no1,no2);
+printf("\n enter ur ans = ");
+scanf("%d",&stans);
+ans =no1*no2;
+if (ans == stans )
+{
+     printf("Very good !");
+}
+else
+{
+     printf("No. please try again \n"); 
+}
+
+ }while (ans != stans);
+
+}
